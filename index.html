@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certification">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <!-- <i class="fa-solid fa-xmark" onclick="closemenu"></i> -->
+          </ul>
+          <!-- <i class="fa-solid fa-bars" onclick="openmenu"></i> -->
+        </nav>
+        <div class="header-text">
+          <h1>Hi, I'm Chirag Kamble</h1>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!------------------- About Me Section--------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              My name is Chirag Kamble, and I am from Mumbai. I have recently
+              attained a Bachelor's degree in Electronics and Telecommunication
+              from Atharva College of Engineering Mumbai. Currently I am a
+              Fresher with theoretical knowledge, but I can assure you that I
+              can do hardwork and I will put all my efforts for the good
+              progress of my organization.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React js</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  Atharva College of Engineering 2019-2023<br />Bachelor of
+                  Engineering<br />Electronics and Telecommunication
+                </li>
+                <li>
+                  Nirmala Memorial Foundation Jr. College 2019<br />Higher
+                  Secondary Certificate
+                </li>
+                <li>
+                  St. Joseph High School 2017<br />Secondary School Certificate
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- ---------------------Projects----------------------- -->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="project-list">
+          <div>
+            <h2>Smart Video Player</h2>
+            <p>
+              To build a smart video player automatically controlled by hand
+              gestures.<br />
+              Code: Python. <br />
+              Domain: Machine Learning and Artificial Intelligence.
+            </p>
+            <br />
+            <h2>
+              <a
+                href="https://kamblechirag.github.io/Calculator/"
+                target="_blank"
+                >Calculator</a
+              >
+            </h2>
+            <p>
+              A simple calculator for calculations. <br />Code: HTML, CSS and
+              JavaScript
+            </p>
+            <br />
+            <h2>
+              <a href="https://kamblechirag.github.io/Clock/" target="_blank"
+                >Analog Clock</a
+              >
+            </h2>
+            <p>
+              An alanog clock that shows you the current time. <br />Code: HTML,
+              CSS, JavaScript
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- ----------------------Certifications----------------- -->
+    <div id="certification">
+      <div class="container">
+        <h1 class="sub-title">Certifications</h1>
+        <img class="image"
+          src="./Web_Dev.png"
+          alt="WEb Development Certidicate-Udemy"
+          width="500px"
+        />
+        <img  class="image" src="./Java.png" alt="Java Certificate-Udemy" width="500px" />
+      </div>
+    </div>
+    <hr />
+    <!-- ------------------------Contact--------------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1>Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> kamblechirag0@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +91-9167973889</p>
+            <div class="social-icons">
+              <a href="linkedin.com/in/chirag-kamble-a50379207" target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/KAMBLECHIRAG" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://maps.app.goo.gl/JiYD6kFaCADpP8Jc7"
+                target="_blank"
+                ><i class="fa-solid fa-location-dot"></i
+              ></a>
+            </div>
+            <br />
+            <button>
+              <a href="./Chirag_Kamble_Resume.pdf" download class="btn"
+                >Download CV</a
+              >
+            </button>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input
+                type="text"
+                placeholder=" Your Name"
+                name="name"
+                required
+              />
+              <input
+                type="email"
+                placeholder=" Your Email"
+                name="email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/de79d59513.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
